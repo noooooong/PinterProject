@@ -1,0 +1,25 @@
+{{>common/header}}
+<div class="main">
+    {{#msg}}
+        <h2>Message: {{msg}}</h2>
+    {{/msg}}
+    <h2>Title Insert</h2>
+        {{#dtos}}
+    <table width="80%">
+        <tr>
+            <td>id:</td><td>{{id}}</td>
+        </tr>
+        <tr>
+            <td>name:</td><td><a href="/selectOne/{{id}}">{{name}}</a></td>
+        </tr>
+        <tr>
+            <td>password:</td><td>{{password}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+        {{/dtos}}
+    <a href="/insert">사용자 추가</a>
+</div>
+{{>common/footer}}

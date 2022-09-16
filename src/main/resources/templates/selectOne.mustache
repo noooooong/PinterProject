@@ -1,0 +1,21 @@
+{{>common/header}}
+<div class="main">
+    <h2>Title Insert</h2>
+        {{#dto}}
+    <table width="80%">
+        <tr>
+            <td>id:</td><td>{{name}}</td>
+        </tr>
+        <tr>
+            <td>password:</td><td>{{password}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="/selectAll">목록</a>
+            <a href="/delete/{{id}}">삭제</a>
+            <a href="/update/{{id}}">수정</a>
+            </td>
+        </tr>
+    </table>
+        {{/dto}}
+</div>
+{{>common/footer}}

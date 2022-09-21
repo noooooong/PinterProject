@@ -16,30 +16,30 @@ public class UserRestController {
     private UserService userService;
     @GetMapping("/rest/test")
     public String test(){
-        return "hellowRest";
+        return "RestTest";
     }
 
-    @PostMapping("rest/comment/insert")
+    @PostMapping("rest/user/insert")
     public UserList insert(@RequestBody UserDto dto){
         UserList saved = userService.save(dto.toEntity());
         return saved;
     }
-    @GetMapping("rest/comment/selectOne/{id}")
+    @GetMapping("rest/user/selectOne/{id}")
     public UserList selectById(@PathVariable Integer id){
         UserList entity= userService.findById(id);
         return entity;
     }
-    @GetMapping("rest/comment/selectAll")
+    @GetMapping("rest/user/selectAll")
     public ResponseEntity<List<UserList>> selectAll(){
         List<UserList> dtos = userService.findAll();
         return ResponseEntity.status(HttpStatus.OK).body(dtos);
     }
-    @PutMapping("rest/comment/update")
+    @PutMapping("rest/user/update")
     public UserList update(@RequestBody UserDto dto){
         UserList saved = userService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/comment/delete/{id}")
+    @DeleteMapping("rest/user/delete/{id}")
     public void delete(@PathVariable Integer id){
         System.out.println(id);
         UserList entity = new UserList(id,null,null,null,null,null,null,null);

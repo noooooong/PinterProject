@@ -1,6 +1,7 @@
 package com.example.Project.model.request;
 
 import com.example.Project.model.entity.BoardList;
+import com.example.Project.model.entity.ContentsList;
 import com.example.Project.model.entity.FileList;
 import lombok.*;
 
@@ -14,8 +15,8 @@ import javax.persistence.Column;
 public class FileDto {
 
 
-    private Integer fileNumber;
-    private Integer contentNumber;
+    private Long fileNumber;
+    private ContentsList contentNumber;
     private String fileName;
     private String fileSize;
     private Integer fileType;

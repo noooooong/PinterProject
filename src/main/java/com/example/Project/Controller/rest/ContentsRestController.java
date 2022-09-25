@@ -35,12 +35,12 @@ public class ContentsRestController {
         ContentsList saved = contentsService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/contents/delete/{id}")
-    public void delete(@PathVariable Integer id){
-        System.out.println(id);
-        ContentsList entity = new ContentsList(id,null,null,null,null,null,null);
-        System.out.println(entity);
-        contentsService.delete(entity);
-    }
+//    @DeleteMapping("rest/contents/delete/{id}")
+//    public void delete(@PathVariable Integer id){
+//        System.out.println(id);
+//        ContentsList entity = new ContentsList(id,null,null,null,null,null,null,null);
+//        System.out.println(entity);
+//        contentsService.delete(entity);
+//    }
 
 }

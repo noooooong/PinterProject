@@ -35,12 +35,12 @@ public class FileRestController {
         FileList saved = fileService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/file/delete/{id}")
-    public void delete(@PathVariable Integer id){
-        System.out.println(id);
-        FileList entity = new FileList(id,null,null,null,null,null);
-        System.out.println(entity);
-        fileService.delete(entity);
-    }
+//    @DeleteMapping("rest/file/delete/{id}")
+//    public void delete(@PathVariable Integer id){
+//        System.out.println(id);
+//        FileList entity = new FileList(id,null,null,null,null,null);
+//        System.out.println(entity);
+//        fileService.delete(entity);
+//    }
 
 }

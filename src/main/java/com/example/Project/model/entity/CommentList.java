@@ -18,7 +18,6 @@ import javax.persistence.*;
         allocationSize=1//메모리를 통해 할당할 범위 사이즈
 )
 public class CommentList extends BaseTimeEntity {
-    @Column(nullable = false)
     @Id
     //자동으로 증가하는 컬럼
     @GeneratedValue(

@@ -31,12 +31,13 @@ public class BoardList extends BaseTimeEntity {
     private UserList userNumber;
     @Column(nullable = false)
     private ContentsList contentNumber;
+
     private String modifyUser;
     private String boardName;
     private String boardMemo;
 
-    @OneToMany
-    @JoinTable(name = "BOARD_CONTENTS")
-    private List<BoardContents> boardContents = new ArrayList<>();
+//    @OneToMany
+//    @JoinTable(name = "BOARD_CONTENTS")
+//    private List<BoardContents> boardContents = new ArrayList<>();
 
 }

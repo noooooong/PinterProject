@@ -39,12 +39,12 @@ public class UserRestController {
         UserList saved = userService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/user/delete/{id}")
-    public void delete(@PathVariable Integer id){
-        System.out.println(id);
-        UserList entity = new UserList(id,null,null,null,null,null,null,null);
-        System.out.println(entity);
-        userService.delete(entity);
-    }
+//    @DeleteMapping("rest/user/delete/{id}")
+//    public void delete(@PathVariable Integer id){
+//        System.out.println(id);
+//        UserList entity = new UserList(id,null,null,null,null,null,null,null);
+//        System.out.println(entity);
+//        userService.delete(entity);
+//    }
 
 }

@@ -24,7 +24,6 @@ public class FileList extends BaseTimeEntity {
             strategy= GenerationType.SEQUENCE,//사용할 전략을 시퀀스로  선택
             generator="FILENUMBER_SEQ_GEN"//식별자 생성기를 설정해놓은  USER_SEQ_GEN으로 설정
     )
-    @Column(nullable = false)
     @ManyToOne
     private Long fileNumber;
     @Column(nullable = false)

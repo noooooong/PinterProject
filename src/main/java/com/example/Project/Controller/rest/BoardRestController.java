@@ -35,12 +35,12 @@ public class BoardRestController {
         BoardList saved = boardService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/board/delete/{id}")
-    public void delete(@PathVariable Integer id){
-        System.out.println(id);
-        BoardList entity = new BoardList(id,null,null,null,null,null);
-        System.out.println(entity);
-        boardService.delete(entity);
-    }
+//    @DeleteMapping("rest/board/delete/{id}")
+//    public void delete(@PathVariable Integer boardNumber){
+//        System.out.println(id);
+//        BoardList entity = new BoardList(boardNumber,null,null,null,null,null,null);
+//        System.out.println(entity);
+//        boardService.delete(entity);
+//    }
 
 }

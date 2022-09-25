@@ -36,7 +36,6 @@ public class ContentsList extends BaseTimeEntity {
     private Integer clicked;
     private Integer saved;
 
-    @ManyToMany(mappedBy = "CONTENT_LIST")
-    @JoinTable(name = "BOARD_CONTENTS")
-    private List<BoardContents> boardContents = new ArrayList<>();
+//    @OneToMany(mappedBy = "CONTENT_LIST")
+//    private List<BoardContents> boardContents;
 }

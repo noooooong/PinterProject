@@ -1,6 +1,7 @@
 package com.example.Project.model.request;
 
 import com.example.Project.model.entity.UserList;
+import com.example.Project.model.entity.UserState;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -11,14 +12,14 @@ import javax.persistence.Column;
 @Setter
 @Getter
 public class UserDto {
-    private Integer userNumber;
+    private Long userNumber;
     private String email;
     private String userPw;
     private String lastName;
     private String firstName;
     private String introduction;
     private String profilePic;
-    private Integer stateCheck;
+    private UserState stateCheck;
     public UserList toEntity(){
         return new UserList(userNumber,email,userPw,lastName,firstName,introduction,profilePic,stateCheck);
     }

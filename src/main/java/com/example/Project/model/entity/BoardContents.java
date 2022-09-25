@@ -5,7 +5,7 @@ import com.example.Project.Domain.BaseTimeEntity;
 import javax.persistence.*;
 
 @Entity
-public class BoardContents extends BaseTimeEntity {
+public class BoardContents {
 
     @Id
     @GeneratedValue

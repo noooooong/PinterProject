@@ -35,12 +35,12 @@ public class CommentRestController {
         CommentList saved = commentService.save(dto.toEntity());
         return saved;
     }
-    @DeleteMapping("rest/comment/delete/{id}")
-    public void delete(@PathVariable Integer id){
-        System.out.println(id);
-        CommentList entity = new CommentList(id,null,null,null,null,null,null);
-        System.out.println(entity);
-        commentService.delete(entity);
-    }
+//    @DeleteMapping("rest/comment/delete/{id}")
+//    public void delete(@PathVariable Integer id){
+//        System.out.println(id);
+//        CommentList entity = new CommentList(id,null,null,null,null,null,null);
+//        System.out.println(entity);
+//        commentService.delete(entity);
+//    }
 
 }

@@ -1,6 +1,9 @@
 package com.example.Project.model.request;
 
 import com.example.Project.model.entity.CommentList;
+import com.example.Project.model.entity.CommentState;
+import com.example.Project.model.entity.ContentsList;
+import com.example.Project.model.entity.UserList;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -11,12 +14,12 @@ import javax.persistence.Column;
 @Setter
 @Getter
 public class CommentDto {
-    private Integer commentId;
-    private Integer contentNumber;
-    private Integer userNumber;
+    private Long commentId;
+    private ContentsList contentNumber;
+    private UserList userNumber;
     private String text;
     private Integer recommend;
-    private Integer coComentClass;
+    private CommentState coComentClass;
     private Integer commentIndex;
 
     public CommentList toEntity(){

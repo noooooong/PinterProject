@@ -1,19 +1,31 @@
 {{>common/header}}
 <div class="main">
-    {{#msg}}
-        <h2>Message: {{msg}}</h2>
-    {{/msg}}
     <h2>Title Insert</h2>
         {{#dtos}}
     <table width="80%">
         <tr>
-            <td>id:</td><td>{{id}}</td>
+            <td>UserNumber:</td><td>{{userNumber}}</td>
         </tr>
         <tr>
-            <td>name:</td><td><a href="/selectOne/{{id}}">{{name}}</a></td>
+            <td>Email:</td><td><a href="/selectOne/{{userNumber}}">{{email}}</a></td>
         </tr>
         <tr>
-            <td>password:</td><td>{{password}}</td>
+            <td>Password:</td><td>{{userPw}}</td>
+        </tr>
+        <tr>
+            <td>LastName:</td><td>{{lastName}}</td>
+        </tr>
+        <tr>
+            <td>FirstName:</td><td>{{firstName}}</td>
+        </tr>
+        <tr>
+            <td>Introduction:</td><td>{{introduction}}</td>
+        </tr>
+        <tr>
+            <td>ProfilePic:</td><td>{{profilePic}}</td>
+        </tr>
+        <tr>
+            <td>StateCheck:</td><td>{{stateCheck}}</td>
         </tr>
         <tr>
             <td colspan="2"></td>

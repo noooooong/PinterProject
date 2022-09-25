@@ -4,13 +4,29 @@
         {{#dto}}
             <form action="/update" method="post">
     <table width="80%">
-        <input type="hidden" name="id" value="{{id}}">
+        <input type="hidden" name="id" value="{{userNumber}}">
         <tr>
-            <td>name:</td><td><input type="text" value="{{name}}" name="name"></td>
+            <td>email:</td><td><input type="text" value="{{email}}" name="email"></td>
         </tr>
         <tr>
-            <td>password:</td><td><input type="text" value="{{password}}" name="password"></td>
+            <td>password:</td><td><input type="text" value="{{userPw}}" name="userPw"></td>
         </tr>
+        <tr>
+            <td>LastName:</td><td><input type="text" value="{{lastName}}" name="lastName"></td>
+        </tr>
+        <tr>
+            <td>firstName:</td><td><input type="text" value="{{firstName}}" name="firstName"></td>
+        </tr>
+        <tr>
+            <td>Introduction:</td><td><input type="text" value="{{introduction}}" name="introduction"></td>
+        </tr>
+        <tr>
+            <td>ProfilePic:</td><td><input type="text" value="{{profilePic}}" name="profilePic"></td>
+        </tr>
+        <tr>
+            <td>StateCheck:</td><td><input type="text" value="{{stateCheck}}" name="stateCheck"></td>
+        </tr>
+
         <tr>
             <td colspan="2"><a href="/selectAll">목록</a>
             <input type="submit" value="update">
